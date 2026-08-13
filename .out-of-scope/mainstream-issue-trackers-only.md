@@ -1,6 +1,6 @@
 # Issue tracker 集成仅限主流工具
 
-`setup-matt-pocock-skills` 只对**主流** issue tracker 提供一等支持。为小众、新兴或单一厂商的实验性 tracker 增加支持不在范围内。
+`setup-skills` 只对**主流** issue tracker 提供一等支持。为小众、新兴或单一厂商的实验性 tracker 增加支持不在范围内。
 
 ## 为什么这不在范围内
 

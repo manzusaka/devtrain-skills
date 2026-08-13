@@ -1,13 +1,12 @@
 {
-  "name": "mattpocock-skills",
-  "version": "1.2.3",
-  "description": "Matt Pocock 面向真实工程工作的 agent skills：持续追问、spec/ticket flows、TDD、代码审查、领域建模等。即装即用，不是 vibe coding。",
+  "name": "devtrain-skills",
+  "version": "1.0.0",
+  "description": "面向真实工程工作的 agent skills：持续追问、spec/ticket flows、TDD、代码审查、领域建模等。即装即用，不是 vibe coding。",
   "author": {
-    "name": "Matt Pocock",
-    "url": "https://www.aihero.dev"
+    "name": "Mitix devtrain",
+    "url": ""
   },
-  "homepage": "https://www.aihero.dev/s/skills-newsletter",
-  "repository": "https://github.com/vinvcn/mattpocock-skills-zh-CN",
+  "repository": "https://github.com/manzusaka/devtrain-skills",
   "license": "MIT",
   "keywords": [
     "engineering",
@@ -30,7 +29,7 @@
     "./skills/engineering/prototype",
     "./skills/engineering/research",
     "./skills/engineering/resolving-merge-conflicts",
-    "./skills/engineering/setup-matt-pocock-skills",
+    "./skills/engineering/setup-skills",
     "./skills/engineering/tdd",
     "./skills/engineering/to-spec",
     "./skills/engineering/to-tickets",

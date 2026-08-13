@@ -20,7 +20,7 @@
 
 ## Prerequisites
 
-`to-tickets` 发布到一个 tracker，所以 [setup-matt-pocock-skills](https://aihero.dev/skills-setup-matt-pocock-skills) 必须先为这个 repo 配置好一个，连同 triage-label vocabulary。任一类型都可以：像 GitHub 或 Linear 这样的真实 tracker，或 `.scratch/` 下的 local markdown 文件，后者开箱即受支持。
+`to-tickets` 发布到一个 tracker，所以 [setup-skills](https://aihero.dev/skills-setup-skills) 必须先为这个 repo 配置好一个，连同 triage-label vocabulary。任一类型都可以：像 GitHub 或 Linear 这样的真实 tracker，或 `.scratch/` 下的 local markdown 文件，后者开箱即受支持。
 
 ## Tracer bullets, not layers
 

@@ -30,7 +30,7 @@ Spec 轴线需要一份 spec 存在且可找到。它按这个顺序查找：
 3. `docs/`、`specs/` 或 `.scratch/` 下与 branch 或 feature 名字匹配的一份 spec 文件。
 4. 问你。
 
-第 1 步依赖 `docs/agents/issue-tracker.md`，它由 [setup-matt-pocock-skills](https://aihero.dev/skills-setup-matt-pocock-skills) 写入。没有它，如果你递给它一条路径，这条轴线仍然能工作。如果完全没有 spec，Spec 的 sub-agent 会被跳过，报告会说 "no spec available"，而不是编造需求。
+第 1 步依赖 `docs/agents/issue-tracker.md`，它由 [setup-skills](https://aihero.dev/skills-setup-skills) 写入。没有它，如果你递给它一条路径，这条轴线仍然能工作。如果完全没有 spec，Spec 的 sub-agent 会被跳过，报告会说 "no spec available"，而不是编造需求。
 
 ## The two axes
 

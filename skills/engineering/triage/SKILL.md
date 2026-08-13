@@ -40,7 +40,7 @@ Triage 期间发布到 issue tracker 的每条 comment 或 issue **必须**以�
 
 每个已 triage 的 issue 应该刚好携带一个 category role 和一个 state role。如果 state roles 冲突，标记出来并先询问 maintainer，再做其他事。
 
-这些是 canonical role names；issue tracker 中实际使用的 label strings 可能不同。映射应该已经提供给你；如果没有，运行 `/setup-matt-pocock-skills`。
+这些是 canonical role names；issue tracker 中实际使用的 label strings 可能不同。映射应该已经提供给你；如果没有，运行 `/setup-skills`。
 
 State transitions：未标记的 issue 通常先进入 `needs-triage`；之后移动到 `needs-info`、`ready-for-agent`、`ready-for-human` 或 `wontfix`。`needs-info` 在 reporter 回复后回到 `needs-triage`。Maintainer 可以随时 override；对看起来异常的 transitions 标记并在继续前询问。
 

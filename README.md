@@ -12,9 +12,9 @@
 npx skills@latest add manzusaka/devtrain-skills
 ```
 
-2. 选择你想安装的 skills，以及要安装到哪些 coding agents。**确保选择 `/setup-matt-pocock-skills`**。
+2. 选择你想安装的 skills，以及要安装到哪些 coding agents。**确保选择 `/setup-skills`**。
 
-3. 在你的 agent 中运行 `/setup-matt-pocock-skills`。它会：
+3. 在你的 agent 中运行 `/setup-skills`。它会：
    - 询问你要使用哪个 issue tracker（GitHub、Linear 或 local files）
    - 询问你 triage issues 时使用哪些 labels（`/triage` 会使用这些 labels）
    - 询问要把创建的 docs 保存到哪里
@@ -49,7 +49,7 @@ npx skills@latest add manzusaka/devtrain-skills
 - **[grill-with-docs](./skills/engineering/grill-with-docs/SKILL.md)** - 追问式访谈，同时构建项目的 domain model、打磨术语，并内联更新 `CONTEXT.md` 与 ADRs。
 - **[triage](./skills/engineering/triage/SKILL.md)** - 通过 triage roles state machine 推进 issues。
 - **[improve-codebase-architecture](./skills/engineering/improve-codebase-architecture/SKILL.md)** - 扫描 codebase 中的 deepening opportunities，生成可视化 HTML report，然后围绕你选中的候选项继续 grilling。
-- **[setup-matt-pocock-skills](./skills/engineering/setup-matt-pocock-skills/SKILL.md)** - 配置 issue tracker、triage labels 和 domain docs 布局。每个 repo 运行一次。
+- **[setup-skills](./skills/engineering/setup-skills/SKILL.md)** - 配置 issue tracker、triage labels 和 domain docs 布局。每个 repo 运行一次。
 - **[to-spec](./skills/engineering/to-spec/SKILL.md)** - 把当前对话整理成 spec 并发布到 issue tracker。不做访谈，只综合已经讨论过的内容。
 - **[to-tickets](./skills/engineering/to-tickets/SKILL.md)** - 把 plan、spec 或 conversation 拆成 tracer-bullet tickets，每个 ticket 声明 blocking edges——在 local file 中写成文本，或在真实 tracker 上写成 native blocking links。
 - **[wayfinder](./skills/engineering/wayfinder/SKILL.md)** - 把超出单个 agent session 的大块工作规划成 issue tracker 上的 decision tickets 共享 map，逐一解决直到通往 destination 的路清晰。

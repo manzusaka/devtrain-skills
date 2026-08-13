@@ -1,5 +1,5 @@
 ---
-name: setup-matt-pocock-skills
+name: setup-skills
 description: 为此仓库配置 engineering skills——设置其 issue tracker、triage labels 词汇与 domain docs 布局。在首次使用其他 engineering skills 前运行一次。
 disable-model-invocation: true
 ---

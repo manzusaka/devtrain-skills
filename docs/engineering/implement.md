@@ -26,7 +26,7 @@
 
 `implement` 提交到你当前所在的 branch。它不会创建分支，也不会问。开始之前确认你正处于你想要工作落在其上的 branch。
 
-如果 tickets 来自 [to-tickets](https://aihero.dev/skills-to-tickets)，它们所在的 tracker 由 [setup-matt-pocock-skills](https://aihero.dev/skills-setup-matt-pocock-skills) 配置。`code-review` 读取同一配置，以便在收尾时找到源起 spec。
+如果 tickets 来自 [to-tickets](https://aihero.dev/skills-to-tickets)，它们所在的 tracker 由 [setup-skills](https://aihero.dev/skills-setup-skills) 配置。`code-review` 读取同一配置，以便在收尾时找到源起 spec。
 
 ## What one run does
 

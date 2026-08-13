@@ -95,4 +95,4 @@ artifact 可以，无任何条件：它是一个普通 bash 脚本，不关心�
 
 ## Where it fits
 
-`wizard` 是一个随时可用的 standalone，坐在自动化停止、人类必须点击的那条线上。它最近的邻居是 [setup-matt-pocock-skills](https://aihero.dev/skills-setup-matt-pocock-skills)，因为两者都是为了把 repo 弄到可工作状态——那一个配置的是这套 skills，而 `wizard` 为其他一切生成 setup 路径。它还与 [implement](https://aihero.dev/skills-implement) 配对：当一次 build 落地一个需要凭据或手动切换的 feature 时，wizard 就是完成人类那一半的方式。当你不确定哪个 skill 适合当下时刻时，[ask-matt](https://aihero.dev/skills-ask-matt) 为你引路。
+`wizard` 是一个随时可用的 standalone，坐在自动化停止、人类必须点击的那条线上。它最近的邻居是 [setup-skills](https://aihero.dev/skills-setup-skills)，因为两者都是为了把 repo 弄到可工作状态——那一个配置的是这套 skills，而 `wizard` 为其他一切生成 setup 路径。它还与 [implement](https://aihero.dev/skills-implement) 配对：当一次 build 落地一个需要凭据或手动切换的 feature 时，wizard 就是完成人类那一半的方式。当你不确定哪个 skill 适合当下时刻时，[ask-matt](https://aihero.dev/skills-ask-matt) 为你引路。

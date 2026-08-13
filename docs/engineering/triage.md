@@ -20,7 +20,7 @@
 
 ## Prerequisites
 
-`triage` 会读写你的 issue tracker，所以 [setup-matt-pocock-skills](https://aihero.dev/skills-setup-matt-pocock-skills) 必须先配置好那个 tracker 和它的 label vocabulary。下面这些 role 名称是 **canonical** 的；你 tracker 里的 label 字符串可能不同，那份映射正是 setup 所提供的。如果你的 tracker 已经精确使用 canonical 名称，就没有什么可映射、没什么可配置。
+`triage` 会读写你的 issue tracker，所以 [setup-skills](https://aihero.dev/skills-setup-skills) 必须先配置好那个 tracker 和它的 label vocabulary。下面这些 role 名称是 **canonical** 的；你 tracker 里的 label 字符串可能不同，那份映射正是 setup 所提供的。如果你的 tracker 已经精确使用 canonical 名称，就没有什么可映射、没什么可配置。
 
 Tracker config 还决定外部 pull requests 是否算作一个 request surface，以及谁算作 external。那个 flag 默认关闭，已不再是 setup 问题——如果你想 PRs 在范围内，在 `docs/agents/issue-tracker.md` 里翻转它。
 
@@ -71,7 +71,7 @@ Discovery 只呈现*外部* PRs，因为协作者一个进行中的 branch 不�
 只有在你有人境工作的时候。`triage` 早于那条主干，做的是不同的工作：它是别人提交的 reports 的车道。如果你的 tracker 里一切来自你自己的规划，你很少会打开它。如果你维护任何公开的东西，或你的团队向你提报 bugs，它就是前门。主要用途是拿着来自外部贡献者 issues 的开源 repos。
 
 **agent 试图应用 `ready-for-agent`，而 `gh` 说这个 label 不存在。**
-已知的开放 bug（[#616](https://github.com/mattpocock/skills/issues/616)）。`setup-matt-pocock-skills` 把 label vocabulary 写进 `docs/agents/triage-labels.md`，但不会在你的 tracker 里创建 labels。自己创建那五个 state labels 和两个 category labels，一次，用 `gh label create` 或 tracker 的 UI，然后它就停了。issue 里有一个尚未合并的社区修复分支。
+已知的开放 bug（[#616](https://github.com/mattpocock/skills/issues/616)）。`setup-skills` 把 label vocabulary 写进 `docs/agents/triage-labels.md`，但不会在你的 tracker 里创建 labels。自己创建那五个 state labels 和两个 category labels，一次，用 `gh label create` 或 tracker 的 UI，然后它就停了。issue 里有一个尚未合并的社区修复分支。
 
 **五个 states 不够——blocked 或 deferred 或 implemented 呢？**
 这是这个 skill 上被提报最多的缺口，有三种形状。一个已完全指定但等另一个 issue 关闭的 issue（[#139](https://github.com/mattpocock/skills/issues/139)）——reporter 的抱怨是 `ready-for-agent` 在那里 "technically true" 但误导，所以一个 agent 领起它然后撞墙。Trigger-gated 的未来工作，是打算做的但还不能行动（[#297](https://github.com/mattpocock/skills/issues/297)）。以及一个用于 "implemented, awaiting verification" 的终态，没有它一个 AFK runner 会重新排队已完成的 tickets。Matt 已同意 blocked 情形是真实的，对名字（`blocked` 对 `paused`）未决定。它们都没发布。人们用的 workaround 是 category 旁边加一个 repo-local 的额外 label，让 canonical state 槽被某个诚实的东西占据，代价是 skill 不知道它。一个社区衍生版走得更远，加了 `needs-slicing`、`tracking` 和 effort labels——那可行，但那是他们的，不是 skill 的。

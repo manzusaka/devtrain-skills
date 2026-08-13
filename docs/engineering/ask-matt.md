@@ -20,7 +20,7 @@
 
 Router 只点名 skills，它不安装它们。它指向的一切都必须已安装，推荐才具有可操作性，而且它只认识本仓库中那些已推广的 skills。
 
-依赖 tracker 的 routes——triage、`to-spec`、`to-tickets`、`implement`——假设 [setup-matt-pocock-skills](https://aihero.dev/skills-setup-matt-pocock-skills) 已经在仓库中配置好了一个 issue tracker。router 会乐于在那之前就推荐它们。
+依赖 tracker 的 routes——triage、`to-spec`、`to-tickets`、`implement`——假设 [setup-skills](https://aihero.dev/skills-setup-skills) 已经在仓库中配置好了一个 issue tracker。router 会乐于在那之前就推荐它们。
 
 ## Flows, not skills
 

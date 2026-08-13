@@ -8,7 +8,7 @@ disable-model-invocation: true
 
 把 plan、spec 或 conversation 拆成一组 **tickets**：tracer-bullet vertical slices，每个 ticket 都声明 **block** 它的 tickets。
 
-Issue tracker 和 triage label vocabulary 应该已经提供；如果没有，运行 `/setup-matt-pocock-skills`。
+Issue tracker 和 triage label vocabulary 应该已经提供；如果没有，运行 `/setup-skills`。
 
 ## Process
 
@@ -57,7 +57,7 @@ Issue tracker 和 triage label vocabulary 应该已经提供；如果没有，�
 
 ### 5. Publish the tickets to the configured tracker
 
-发布已批准的 tickets。具体方式取决于 `/setup-matt-pocock-skills` 配置的 tracker；tickets 相同，只有 blocking edges 的形状不同：
+发布已批准的 tickets。具体方式取决于 `/setup-skills` 配置的 tracker；tickets 相同，只有 blocking edges 的形状不同：
 
 - **Local files** → 在 `.scratch/<feature-slug>/issues/<NN>-<slug>.md` 下每 ticket 写一个文件，按 dependency order（blockers 优先）从 `01` 编号。每个文件的 “Blocked by” 列出它依赖的 number/title。使用下面的 per-ticket template；每个文件只放一个 ticket，绝不要写成一个 combined file。
 - **真实 issue tracker（GitHub、Linear 等）** → 按 dependency order（blockers 优先）每 ticket 发布一个 issue，让 blocking edges 能引用真实 identifiers。平台支持时使用 native blocking/sub-issue relationship，否则把 blocking issues 写进每个 ticket 的 “Blocked by”。除非另有指示，应用 `ready-for-agent` triage label；这些 tickets 天生可被 agent 领取。
